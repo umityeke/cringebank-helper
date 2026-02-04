@@ -169,6 +169,16 @@ function applyTerminology(content) {
   next = next.replace('Sosyal medya/DM/WhatsApp', 'Sosyal medya/mesajlaşma/WhatsApp');
   next = next.replace('Sosyal medya/Özel Mesaj/WhatsApp', 'Sosyal medya/CringChat/WhatsApp');
 
+  // Help Center -> Yardım Merkezi (site-wide wording)
+  next = applyReplacements(next, [
+    { from: /Cringebank Help Center/g, to: 'Cringebank Yardım Merkezi' },
+    { from: /Cringestore Help Center/g, to: 'Cringestore Yardım Merkezi' },
+    { from: /Cringe Help Center/g, to: 'Cringe Yardım Merkezi' },
+    { from: /Help Center/g, to: 'Yardım Merkezi' },
+    { from: /Help center/g, to: 'Yardım Merkezi' },
+    { from: /Helpcenter/g, to: 'Yardım Merkezi' },
+  ]);
+
   return next;
 }
 

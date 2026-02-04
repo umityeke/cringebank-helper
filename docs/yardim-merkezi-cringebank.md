@@ -1,6 +1,6 @@
 # Cringebank Yardım Merkezi — Kapsam, IA ve Hukuki Çerçeve (TR)
 
-> Amaç: Cringebank (sosyal ağ) için **tam teşekküllü** Help Center bilgi mimarisi (IA), kullanıcıya gösterilecek içerik sınırları ve hukuki/operasyonel “müdahale yetkisi” çerçevesini netleştirmek.
+> Amaç: Cringebank (sosyal ağ) için **tam teşekküllü** Yardım Merkezi bilgi mimarisi (IA), kullanıcıya gösterilecek içerik sınırları ve hukuki/operasyonel “müdahale yetkisi” çerçevesini netleştirmek.
 >
 > Not: Bu doküman **hukuki danışmanlık değildir**. Metinler yayına alınmadan önce şirket avukatı/DPO ile gözden geçirilmelidir.
 

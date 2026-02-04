@@ -1,6 +1,6 @@
 # CRINGEBANK + CRINGESTORE İŞLEYİŞ DÖKÜMANI (V1)
 
-- **Durum:** Internal / Runbook (Help Center’a doğrudan koymayın)
+- **Durum:** Internal / Runbook (Yardım Merkezi’a doğrudan koymayın)
 - **Tarih:** 04.02.2026
 - **Amaç:** CringeBank (sosyal ağ) ve CringeStore (marketplace) için kullanıcı yolculukları, modüller, veri akışları, roller, güvenlik/moderasyon ve entegrasyon sınırlarını tek yerde netleştirmek.
 
@@ -332,7 +332,7 @@ Bu bölüm bilgilendirme amaçlıdır; güncel metinler esastır.
 - KVKK süreçleri (veri silme talebi, export)
 - Sipariş ve ödeme tutarlılığı (idempotency)
 
-## Ek: Help Center doğrulama (repo)
+## Ek: Yardım Merkezi doğrulama (repo)
 - “Resmî kaynaklar (TR)” bloklarının kapsama kontrolü için: `scripts/verify-resmi-kaynaklar.ps1`
 - Mantık: belirli anahtar kelimeleri içeren HTML sayfalarında ilgili blok başlığının bulunması beklenir.
 

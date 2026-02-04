@@ -1,9 +1,9 @@
-# Help Center Master Index (Çalışma Dokümanları)
+# Yardım Merkezi Master Index (Çalışma Dokümanları)
 
-Bu klasördeki Markdown dosyaları, Cringebank + Cringestore için Help Center kapsamını ve hukuki/operasyonel sınırları takip etmek içindir.
+Bu klasördeki Markdown dosyaları, Cringebank + Cringestore için Yardım Merkezi kapsamını ve hukuki/operasyonel sınırları takip etmek içindir.
 
-- Cringebank: [helpcenter-cringebank.md](./helpcenter-cringebank.md)
-- Cringestore: [helpcenter-cringestore.md](./helpcenter-cringestore.md)
+- Cringebank: [yardim-merkezi-cringebank.md](./yardim-merkezi-cringebank.md)
+- Cringestore: [yardim-merkezi-cringestore.md](./yardim-merkezi-cringestore.md)
 - İşleyiş Dokümanı (Internal): [cringebank-cringestore-isleyis-v1.md](./cringebank-cringestore-isleyis-v1.md)
 
 ## Nasıl kullanacağız?
