@@ -41,7 +41,7 @@ tek bir yerde tanımlar.
 - Kullanıcı üretimi içerik (post/video/foto)
 - Takip / akış / keşfet
 - Etkileşim (beğeni, yorum, paylaşım, kaydetme)
-- DM (mesajlaşma)
+- Özel Mesaj (mesajlaşma)
 - Bildirimler
 - Profil, gizlilik, güvenlik ayarları
 - (Opsiyonel/ileri) rozetler, yarışmalar, görevler, CG ekonomisi (CringeGold)
@@ -127,7 +127,7 @@ Paylaşım sonrası:
 - Save: kullanıcıya özel koleksiyon
 - Share: uygulama içi paylaşım veya link
 
-#### 5.1.6 DM
+#### 5.1.6 Özel Mesaj
 - Inbox listesi
 - Mesaj istekleri / filtreleme
 - Medya paylaşımı
@@ -135,7 +135,7 @@ Paylaşım sonrası:
 
 #### 5.1.7 Bildirimler
 - Like/comment/follow/mention
-- DM mesajı
+- Özel Mesaj mesajı
 - Sistem bildirimi (duyuru, policy güncellemesi)
 
 ### 5.2 Gizlilik & güvenlik
@@ -285,7 +285,7 @@ Bu bölüm bilgilendirme amaçlıdır; güncel metinler esastır.
 
 ### 9.1 Servis sınırları
 - Auth & Identity
-- CringeBank Core (posts, feed, interactions, dm, notifications)
+- CringeBank Core (posts, feed, interactions, mesaj, notifications)
 - CringeStore Core (catalog, cart, order, payment, shipping, disputes)
 - Media (upload/processing)
 - Search (içerik + ürün)

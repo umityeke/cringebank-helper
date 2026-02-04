@@ -30,7 +30,7 @@
 ### 2.1 Müdahale Edebiliriz (yetkimiz olan)
 - İçeriği kaldırma/erişimi kısıtlama (Topluluk Kuralları/İhlal)
 - Hesap kısıtlama/ban (spam, taklit, taciz, ihlal)
-- DM kısıtlama (taciz/spam)
+- Özel Mesaj kısıtlama (taciz/spam)
 - Rapor/itiraz sürecini işletme (yeniden inceleme)
 - KVKK başvurularını işleme alma (erişim/düzeltme/silme vb.)
 
@@ -70,7 +70,7 @@ Aşağıdaki başlıklar **site menüsü/kategori** + **makale listesi** olarak 
 - Engelleme / kısıtlama / sessize alma
 - Etiket/mention izinleri
 - Konum paylaşımı ve görünürlük
-- CringeSpill (Hikaye) görünürlüğü / yakın arkadaşlar (varsa)
+- CringeSpill (Geçici Paylaşım) görünürlüğü / yakın arkadaşlar (varsa)
 
 ### 4.4 Paylaşımlar (post/fotoğraf/video/anket) + CringeClap
 - Paylaşım oluşturma/düzenleme/silme
@@ -79,7 +79,7 @@ Aşağıdaki başlıklar **site menüsü/kategori** + **makale listesi** olarak 
 - İçerik sahipliği ve telif temel prensipleri
 - Hassas içerik politikası (genel)
 
-### 4.5 CringeSpill (Hikaye)
+### 4.5 CringeSpill (Geçici Paylaşım)
 - CringeSpill oluşturma ve arşiv (varsa)
 - CringeSpill’i kimler görebilir/saklama
 - Görüntüleme listesi hakkında genel bilgi (detay yok)
@@ -89,9 +89,9 @@ Aşağıdaki başlıklar **site menüsü/kategori** + **makale listesi** olarak 
 - Yorumlar neden görünmüyor (filtre, rapor, kural)
 - Spam davranışlar ve kısıtlamalar (genel)
 
-### 4.7 Mesajlar (DM)
+### 4.7 Mesajlar (Özel Mesaj)
 - Mesaj istekleri ve güvenlik
-- Engelleme/kısıtlama DM’e etkisi
+- Engelleme/kısıtlama özel mesaja etkisi
 - Taciz/tehdit/şantaj: raporlama, güvenlik önerileri
 
 ### 4.8 Bildirimler
