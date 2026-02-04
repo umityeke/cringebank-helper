@@ -9,6 +9,7 @@ const repoRoot = path.resolve(__dirname, '..');
 //   git mv articles/cringebank/reels-kisa-video.html articles/cringebank/cringeclap-kisa-video.html
 //   git mv articles/cringebank/cringespill-hikaye.html articles/cringebank/cringespill-gecici-paylasim.html
 //   git mv articles/cringebank/dm-taciz-tehdit-santaj.html articles/cringebank/ozel-mesaj-taciz-tehdit-santaj.html
+//   git mv articles/cringebank/ozel-mesaj-taciz-tehdit-santaj.html articles/cringebank/cringchat-taciz-tehdit-santaj.html
 
 function walkFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -54,6 +55,10 @@ const pathReplacements = [
     fromRel: 'articles/cringebank/dm-taciz-tehdit-santaj.html',
     toRel: 'articles/cringebank/ozel-mesaj-taciz-tehdit-santaj.html',
   },
+  {
+    fromRel: 'articles/cringebank/ozel-mesaj-taciz-tehdit-santaj.html',
+    toRel: 'articles/cringebank/cringchat-taciz-tehdit-santaj.html',
+  },
 ];
 
 function applyTerminology(content) {
@@ -87,20 +92,38 @@ function applyTerminology(content) {
     { from: /\bhikaye\b/g, to: 'geçici paylaşım' },
   ]);
 
-  // DM -> Özel Mesaj
+  // DM -> CringChat (and convert any existing “Özel Mesaj” wording)
   next = applyReplacements(next, [
-    { from: /\bDM güvenliği\b/g, to: 'Özel mesaj güvenliği' },
-    { from: /\bDM Güvenliği\b/g, to: 'Özel Mesaj Güvenliği' },
-    { from: /\bKonu: DM\b/g, to: 'Konu: Özel Mesaj' },
+    // DM source text
+    { from: /\bDM güvenliği\b/g, to: 'CringChat güvenliği' },
+    { from: /\bDM Güvenliği\b/g, to: 'CringChat Güvenliği' },
+    { from: /\bKonu: DM\b/g, to: 'Konu: CringChat' },
+    { from: /\bDM['’]de\b/g, to: 'CringChat’te' },
+    { from: /\bDM['’]lerde\b/g, to: 'CringChat’te' },
+    { from: /\bDM['’]ler\b/g, to: 'CringChat mesajları' },
+    { from: /\bDM['’]e\b/g, to: 'CringChat’e' },
+    { from: /\bDM\b/g, to: 'CringChat' },
+    { from: /\bdm\b/g, to: 'cringchat' },
 
-    { from: /\bDM['’]de\b/g, to: 'özel mesajda' },
-    { from: /\bDM['’]lerde\b/g, to: 'özel mesajlarda' },
-    { from: /\bDM['’]ler\b/g, to: 'özel mesajlar' },
-    { from: /\bDM['’]e\b/g, to: 'özel mesaja' },
-    { from: /\bDM\b/g, to: 'Özel Mesaj' },
+    // Existing “Özel Mesaj” text
+    // NOTE: Don't use \b here; JS word boundaries are ASCII-centric and won't match Ö/ö reliably.
+    { from: /Özel Mesaj Güvenliği/g, to: 'CringChat Güvenliği' },
+    { from: /Özel mesaj güvenliği/g, to: 'CringChat güvenliği' },
+    { from: /Konu: Özel Mesaj/g, to: 'Konu: CringChat' },
+    { from: /Özel Mesaj/g, to: 'CringChat' },
+    { from: /özel mesajda/g, to: 'CringChat’te' },
+    { from: /özel mesajlarda/g, to: 'CringChat’te' },
+    { from: /özel mesaja/g, to: 'CringChat’e' },
+    { from: /özel mesajlar/g, to: 'CringChat mesajları' },
+    { from: /özel mesaj/g, to: 'CringChat' },
+  ]);
 
-    // Lowercase token (e.g., query examples)
-    { from: /\bdm\b/g, to: 'mesaj' },
+  // Readability cleanup after replacements
+  next = applyReplacements(next, [
+    { from: /CringChat atabilir/g, to: 'CringChat gönderebilir' },
+    { from: /CringChat atmak/g, to: 'CringChat göndermek' },
+    { from: /CringChat’lerinde/g, to: 'CringChat’inde' },
+    { from: /CringChat’lerde/g, to: 'CringChat’te' },
   ]);
 
   // Search query shortcuts
@@ -122,8 +145,9 @@ function applyTerminology(content) {
     { from: />Reels\s*<\/a>/g, to: '>Kısa Video</a>' },
   ]);
 
-  // Exact cleanup
+  // Exact cleanups
   next = next.replace('Sosyal medya/DM/WhatsApp', 'Sosyal medya/mesajlaşma/WhatsApp');
+  next = next.replace('Sosyal medya/Özel Mesaj/WhatsApp', 'Sosyal medya/CringChat/WhatsApp');
 
   return next;
 }

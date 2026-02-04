@@ -30,7 +30,7 @@
 ### 2.1 Müdahale Edebiliriz (yetkimiz olan)
 - İçeriği kaldırma/erişimi kısıtlama (Topluluk Kuralları/İhlal)
 - Hesap kısıtlama/ban (spam, taklit, taciz, ihlal)
-- Özel Mesaj kısıtlama (taciz/spam)
+- CringChat kısıtlama (taciz/spam)
 - Rapor/itiraz sürecini işletme (yeniden inceleme)
 - KVKK başvurularını işleme alma (erişim/düzeltme/silme vb.)
 
@@ -89,9 +89,9 @@ Aşağıdaki başlıklar **site menüsü/kategori** + **makale listesi** olarak 
 - Yorumlar neden görünmüyor (filtre, rapor, kural)
 - Spam davranışlar ve kısıtlamalar (genel)
 
-### 4.7 Mesajlar (Özel Mesaj)
+### 4.7 Mesajlar (CringChat)
 - Mesaj istekleri ve güvenlik
-- Engelleme/kısıtlama özel mesaja etkisi
+- Engelleme/kısıtlama CringChat’e etkisi
 - Taciz/tehdit/şantaj: raporlama, güvenlik önerileri
 
 ### 4.8 Bildirimler
