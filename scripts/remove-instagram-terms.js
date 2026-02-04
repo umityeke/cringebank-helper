@@ -188,6 +188,12 @@ function applyTerminology(content) {
     { from: /Cringestore yardım merkezine/g, to: 'Yardım Merkezi’ne' },
   ]);
 
+  // Grammar cleanup
+  next = applyReplacements(next, [
+    { from: /Yardım Merkezi’daki/g, to: 'Yardım Merkezi’ndeki' },
+    { from: /Yardım Merkezi'daki/g, to: 'Yardım Merkezi’ndeki' },
+  ]);
+
   return next;
 }
 
