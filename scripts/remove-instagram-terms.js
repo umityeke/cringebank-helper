@@ -171,12 +171,21 @@ function applyTerminology(content) {
 
   // Help Center -> Yardım Merkezi (site-wide wording)
   next = applyReplacements(next, [
-    { from: /Cringebank Help Center/g, to: 'Cringebank Yardım Merkezi' },
-    { from: /Cringestore Help Center/g, to: 'Cringestore Yardım Merkezi' },
-    { from: /Cringe Help Center/g, to: 'Cringe Yardım Merkezi' },
+    // Convert any legacy English wording first
+    { from: /Cringebank Help Center/g, to: 'Yardım Merkezi' },
+    { from: /Cringestore Help Center/g, to: 'Yardım Merkezi' },
+    { from: /Cringe Help Center/g, to: 'Yardım Merkezi' },
     { from: /Help Center/g, to: 'Yardım Merkezi' },
     { from: /Help center/g, to: 'Yardım Merkezi' },
     { from: /Helpcenter/g, to: 'Yardım Merkezi' },
+
+    // Enforce: only “Yardım Merkezi” (no brand prefix)
+    { from: /Cringe Yardım Merkezi/g, to: 'Yardım Merkezi' },
+    { from: /Cringebank Yardım Merkezi/g, to: 'Yardım Merkezi' },
+    { from: /Cringestore Yardım Merkezi/g, to: 'Yardım Merkezi' },
+
+    // Lowercase phrasing that still includes a brand prefix
+    { from: /Cringestore yardım merkezine/g, to: 'Yardım Merkezi’ne' },
   ]);
 
   return next;

@@ -1,4 +1,4 @@
-# Cringestore Yardım Merkezi — Kapsam, IA ve Hukuki Çerçeve (TR)
+# Yardım Merkezi — Kapsam, IA ve Hukuki Çerçeve (TR)
 
 > Amaç: Cringestore (pazaryeri / e-ticaret platformu) için **alıcı + satıcı** tarafını kapsayan Yardım Merkezi bilgi mimarisi (IA), uyuşmazlık/iadeler/ödemeler ve yayınlanacak-yayınlanmayacak bilgi sınırlarını hukuki risk gözeterek belirlemek.
 >

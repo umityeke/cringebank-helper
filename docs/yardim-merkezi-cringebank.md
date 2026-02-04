@@ -1,4 +1,4 @@
-# Cringebank Yardım Merkezi — Kapsam, IA ve Hukuki Çerçeve (TR)
+# Yardım Merkezi — Kapsam, IA ve Hukuki Çerçeve (TR)
 
 > Amaç: Cringebank (sosyal ağ) için **tam teşekküllü** Yardım Merkezi bilgi mimarisi (IA), kullanıcıya gösterilecek içerik sınırları ve hukuki/operasyonel “müdahale yetkisi” çerçevesini netleştirmek.
 >
