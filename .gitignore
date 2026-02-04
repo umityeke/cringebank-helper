@@ -1,0 +1,23 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+
+# Build artifacts (if added later)
+dist/
+build/
+out/
+
+# Coverage
+coverage/

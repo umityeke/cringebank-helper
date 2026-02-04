@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arama · Cringe Help Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="logo" href="./index.html">
+          <img
+            class="logo__img"
+            src="./assets/logo-cringebank.png"
+            alt="Cringe"
+            decoding="async"
+          />
+          <span class="logo__text">Cringe Help Center</span>
+        </a>
+        <nav class="nav">
+          <a href="./cringebank/index.html">Cringebank</a>
+          <a href="./cringestore/index.html">Cringestore</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="./index.html">Ana sayfa</a>
+          <span class="sep">/</span>
+          <span>Arama</span>
+        </div>
+
+        <section class="section" style="padding-top: 18px;">
+          <h2>Konularda ara</h2>
+          <div class="search" role="search">
+            <input id="q" type="search" placeholder="Örn: platform ücreti, 2FA, telif" />
+            <button id="searchBtn">Ara</button>
+          </div>
+          <div id="resultStatus" class="callout" style="margin-top: 12px; display: none;"></div>
+
+          <div class="note" style="margin-top: 12px;">
+            <strong>Resmî kaynaklar (TR)</strong>
+            <ul>
+              <li><a href="https://www.mevzuat.gov.tr/" target="_blank" rel="noopener noreferrer">Mevzuat Bilgi Sistemi</a></li>
+              <li><a href="https://www.resmigazete.gov.tr/" target="_blank" rel="noopener noreferrer">T.C. Resmî Gazete</a></li>
+              <li><a href="https://www.ticaret.gov.tr/" target="_blank" rel="noopener noreferrer">T.C. Ticaret Bakanlığı</a></li>
+              <li><a href="https://www.kvkk.gov.tr/" target="_blank" rel="noopener noreferrer">KVKK (Kişisel Verileri Koruma Kurumu)</a></li>
+              <li><a href="https://www.turkpatent.gov.tr/" target="_blank" rel="noopener noreferrer">TÜRKPATENT</a></li>
+            </ul>
+            <div class="muted">Linkler bilgilendirme amaçlıdır; güncel metinler esas alınır.</div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+          <h2>Tüm makaleler</h2>
+          <div id="results" class="grid">
+            <a class="card card--link" href="./articles/cringebank/hesap-erisim.html">
+              <h3>Cringebank: Hesap erişimi</h3>
+              <p>Giriş sorunları, doğrulama kodu ve hesap kurtarma.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/hesap-dondurma.html">
+              <h3>Cringebank: Hesap dondurma</h3>
+              <p>Geçici kapatma, etkiler ve geri dönüş.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/profil-duzenleme.html">
+              <h3>Cringebank: Profil düzenleme</h3>
+              <p>Kullanıcı adı, bio ve bağlantılar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/hesap-olusturma.html">
+              <h3>Cringebank: Hesap oluşturma</h3>
+              <p>Doğrulama kodu, kullanıcı adı ve ilk ayarlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/cringebank-nedir.html">
+              <h3>Cringebank: Cringebank nedir?</h3>
+              <p>Cringestore farkı, temel özellikler ve hızlı başlangıç.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/arama-nasil-calisir.html">
+              <h3>Cringebank: Arama nasıl çalışır?</h3>
+              <p>Kullanıcı/etiket arama ipuçları ve sorun giderme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/cringespill-hikaye.html">
+              <h3>Cringebank: CringeSpill (Hikaye)</h3>
+              <p>Paylaşma, görünürlük ve arşiv (genel).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/paylasim-gorunmuyor.html">
+              <h3>Cringebank: Paylaşım görünmüyor</h3>
+              <p>İnceleme, gizlilik ve teknik kontroller.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/yorumlar-gorunmuyor.html">
+              <h3>Cringebank: Yorumlar görünmüyor</h3>
+              <p>Filtreler, moderasyon, engelleme ve teknik gecikme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/konum-paylasimi.html">
+              <h3>Cringebank: Konum paylaşımı</h3>
+              <p>İzinler ve görünürlük: nasıl kontrol edersin?</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/kimlik-dogrulama.html">
+              <h3>Cringebank: Kimlik doğrulama (varsa)</h3>
+              <p>Neden istenir, genel işleyiş ve ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/baglanti-var-baglanmiyor.html">
+              <h3>Cringebank: Bağlantı var ama bağlanmıyor</h3>
+              <p>VPN/DNS, servis durumu ve hızlı kontroller.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/iki-adimli-dogrulama.html">
+              <h3>Cringebank: İki adımlı doğrulama (2FA)</h3>
+              <p>Uygulama/SMS ile hesabını güvene al.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/supheli-giris.html">
+              <h3>Cringebank: Şüpheli giriş</h3>
+              <p>Şifre değiştir, 2FA aç, oturumları kapat.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/hesap-ele-gecirildi.html">
+              <h3>Cringebank: Hesabım ele geçirildi</h3>
+              <p>Acil adımlar: şifre/2FA/oturumlar ve kontrol listesi.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/cihaz-yonetimi.html">
+              <h3>Cringebank: Cihaz yönetimi</h3>
+              <p>Bağlı cihazları gör, tanımadığını kapat.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/bildirim-yonetimi.html">
+              <h3>Cringebank: Bildirim yönetimi</h3>
+              <p>Güvenlik uyarıları, özet ve filtreleme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/bildirim-gelmiyor.html">
+              <h3>Cringebank: Bildirim gelmiyor</h3>
+              <p>Uygulama ve cihaz ayarlarında hızlı kontroller.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/gizlilik-ayarlari.html">
+              <h3>Cringebank: Gizlilik ayarları</h3>
+              <p>Hesap gizliliği, mesaj istekleri, etiketleme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/etiket-bahsetme-izinleri.html">
+              <h3>Cringebank: Etiket & bahsetme izinleri</h3>
+              <p>Kimler seni etiketleyebilir/mention atabilir? Onay ve kontrol.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/veri-koruma-kvkk.html">
+              <h3>Cringebank: Veri koruma & KVKK (özet)</h3>
+              <p>Kişisel veri, kullanıcı hakları ve başvuru yolu.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/mesaj-istekleri.html">
+              <h3>Cringebank: Mesaj istekleri</h3>
+              <p>Kimler DM atabilir, spamı azaltma ve güvenlik ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/dm-taciz-tehdit-santaj.html">
+              <h3>Cringebank: DM’de taciz/tehdit/şantaj</h3>
+              <p>Güvenli adımlar: kanıt, rapor, engelle, hesap güvenliği.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/engelleme-sikayet.html">
+              <h3>Cringebank: Engelleme & şikayet</h3>
+              <p>Engelle/kısıtla/şikayet et: doğru aracı seç.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/sessize-alma.html">
+              <h3>Cringebank: Sessize alma (mute)</h3>
+              <p>Görünürlüğü azalt; ilişkiyi koparmadan mesafe koy.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/raporlama-nasil-yapilir.html">
+              <h3>Cringebank: Raporlama nasıl yapılır?</h3>
+              <p>İçerik/hesap/mesaj raporlama adımları ve kategori ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/destek-kanallari.html">
+              <h3>Cringebank: Destek kanalları</h3>
+              <p>Talep açma, canlı sohbet ve e‑posta gibi seçenekler.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/yorum-yonetimi.html">
+              <h3>Cringebank: Yorum yönetimi</h3>
+              <p>Sabitle, filtrele, spam engelle.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/etkilesimler-begeni-yorum-kaydetme.html">
+              <h3>Cringebank: Beğeni, yorum, kaydetme</h3>
+              <p>Etkileşimler nasıl çalışır? Kontroller ve sık sorunlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/topluluk-kurallari.html">
+              <h3>Cringebank: Topluluk kuralları (özet)</h3>
+              <p>Kurallar, yaptırımlar ve doğru raporlama yolu.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/moderasyon-kararlari-seffaflik.html">
+              <h3>Cringebank: Moderasyon kararları (şeffaflık)</h3>
+              <p>Neden kaldırma/kısıt olur, itiraz yolu ve genel çerçeve.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/topluluk-ihlaller-itiraz.html">
+              <h3>Cringebank: Topluluk kuralları & itiraz</h3>
+              <p>İhlal süreci, kaldırma ve yeniden inceleme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/nefret-taciz.html">
+              <h3>Cringebank: Nefret &amp; taciz</h3>
+              <p>Nefret söylemi, taciz ve hedef göstermede politika özeti.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/siddet-tehlikeli-davranis.html">
+              <h3>Cringebank: Şiddet &amp; tehlikeli davranış</h3>
+              <p>Şiddet tehdidi, zarar verme ve tehlikeli eylem içerikleri.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/yetiskin-icerik.html">
+              <h3>Cringebank: Yetişkin içerik</h3>
+              <p>Yetişkin içerik sınırları, güvenlik ve yaş hassasiyeti.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/yanlis-bilgi.html">
+              <h3>Cringebank: Yanlış bilgi</h3>
+              <p>Yanlış yönlendirme, bağlam eksikliği ve raporlama.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/spam-manipulasyon.html">
+              <h3>Cringebank: Spam &amp; manipülasyon</h3>
+              <p>Sahte etkileşim, spam ağları ve kötüye kullanım.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/tekrarlayan-ihlaller.html">
+              <h3>Cringebank: Tekrarlayan ihlaller</h3>
+              <p>Tekrar eden kural ihlallerinde kademeli yaptırımlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/dolandiricilik.html">
+              <h3>Cringebank: Dolandırıcılık</h3>
+              <p>Sahte kampanyalar, kimlik avı ve güvenlik ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/telif-bildirimi.html">
+              <h3>Cringebank: Telif bildirimi</h3>
+              <p>Telif/marka ihlallerinde bildirim ve karşı bildirim.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/marka-ihlali.html">
+              <h3>Cringebank: Marka ihlali</h3>
+              <p>Marka/tescilli işaret ihlallerinde bildirim için genel rehber.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/karsi-bildirim.html">
+              <h3>Cringebank: Karşı bildirim</h3>
+              <p>Kaldırmaya itiraz için temel adımlar ve gerekli bilgiler.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/izinler-lisans.html">
+              <h3>Cringebank: İzinler &amp; lisans</h3>
+              <p>Paylaşım hakkı, alıntı/yeniden kullanım ve izin mantığı.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/ses-muzik-kullanimi.html">
+              <h3>Cringebank: Ses/müzik kullanımı</h3>
+              <p>Müzik kullanımı, lisanslar ve telif riskini azaltma.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/kisilik-hakki-ihlali.html">
+              <h3>Cringebank: Kişilik hakkı ihlali</h3>
+              <p>İzinsiz paylaşım/ifşa vb. durumlar için genel bildirim yolu.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/rozet-basvuru.html">
+              <h3>Cringebank: Doğrulama rozeti</h3>
+              <p>Kriterler, başvuru ve sık hatalar.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringebank/gonderi-paylasimi.html">
+              <h3>Cringebank: Gönderi paylaşımı</h3>
+              <p>Fotoğraf/video paylaşımı, düzenleme ve yayınlama.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/paylasim-basarisiz.html">
+              <h3>Cringebank: Paylaşım başarısız</h3>
+              <p>Yükleme takılıyor veya hata veriyorsa çözüm adımları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/kesfet-gorunurlugu.html">
+              <h3>Cringebank: Keşfet görünürlüğü</h3>
+              <p>Görünürlüğü artıran sinyaller ve sık hatalar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/ana-akis-kesfet-nasil-calisir.html">
+              <h3>Cringebank: Ana akış & Keşfet nasıl çalışır?</h3>
+              <p>Kişiselleştirme mantığı ve kullanıcı kontrolleri (genel).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/reels-kisa-video.html">
+              <h3>Cringebank: CringeClap (Reels) & kısa video</h3>
+              <p>Kısa video (CringeClap) oluşturma, düzenleme ve yayınlama.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/video-ses-sorunlari.html">
+              <h3>Cringebank: Video/ses sorunları</h3>
+              <p>Video açılmıyor veya ses gelmiyorsa kontrol listesi.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringebank/canli-yayin.html">
+              <h3>Cringebank: Canlı yayın</h3>
+              <p>Canlı yayın başlatma, güvenlik ve moderasyon.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringebank/uygulama-cokuyor-donuyor.html">
+              <h3>Cringebank: Uygulama çöküyor/donuyor</h3>
+              <p>Performans için hızlı çözümler ve pratik öneriler.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/satici-baslangic.html">
+              <h3>Cringestore: Satıcı başlangıç</h3>
+              <p>Mağaza açma, doğrulama ve ilk ürün.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/cringestore-nedir.html">
+              <h3>Cringestore: Cringestore nedir?</h3>
+              <p>Pazaryeri modeli, platformun rolü ve sınırlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/urun-arama-filtreleme.html">
+              <h3>Cringestore: Ürün arama & filtreleme</h3>
+              <p>Arama, filtreler ve sıralama ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/sepet-favoriler.html">
+              <h3>Cringestore: Sepet & favoriler</h3>
+              <p>Sepet kullanımı, favoriler ve sık sorunlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/siparis-olusturma.html">
+              <h3>Cringestore: Sipariş oluşturma</h3>
+              <p>Adım adım satın alma akışı.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/satici-paneli.html">
+              <h3>Cringestore: Satıcı paneli</h3>
+              <p>Siparişleri panel üzerinden toplu yönet ve takip et.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/urun-listeleme.html">
+              <h3>Cringestore: Ürün listeleme</h3>
+              <p>Başlık, açıklama, görsel ve kategori kuralları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/urun-sayfasi-acilmiyor.html">
+              <h3>Cringestore: Ürün sayfası açılmıyor</h3>
+              <p>Hata/boş sayfa: hızlı kontroller ve destek.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/platform-ucreti.html">
+              <h3>Cringestore: Platform ücreti</h3>
+              <p>Aracı platform hizmet bedeli nasıl çalışır?</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/odeme-yontemleri.html">
+              <h3>Cringestore: Ödeme yöntemleri</h3>
+              <p>Kart ve alternatif ödeme seçenekleri (genel).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/odeme-basarisiz.html">
+              <h3>Cringestore: Ödeme başarısız</h3>
+              <p>Limit, 3D doğrulama ve bankadan kaynaklı sorunlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/fatura-bilgileri.html">
+              <h3>Cringestore: Fatura bilgileri</h3>
+              <p>Bireysel/kurumsal fatura ve vergi bilgisi yönetimi.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/satici-odemeleri.html">
+              <h3>Cringestore: Satıcı ödemeleri</h3>
+              <p>Ödeme takvimi, bekleyen tutarlar ve kesintiler.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/satici-vergi-fatura-yukumlulukleri.html">
+              <h3>Cringestore: Satıcı vergi &amp; fatura</h3>
+              <p>Genel bilgilendirme: fatura/e‑belge, iade etkisi, sorumluluklar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/satici-profili-puan-yorumlar.html">
+              <h3>Cringestore: Satıcı profili & puanlar</h3>
+              <p>Satıcı profili, puan/yorum mantığı ve moderasyon (genel).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/dolandiricilik-onleme.html">
+              <h3>Cringestore: Dolandırıcılık önleme</h3>
+              <p>Risk işaretleri, korunma ve destek adımları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kargo-ayarlari.html">
+              <h3>Cringestore: Kargo ayarları</h3>
+              <p>Teslimat seçenekleri, SLA ve gecikmeler.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kargo-takip-guncellenmiyor.html">
+              <h3>Cringestore: Kargo takip güncellenmiyor</h3>
+              <p>Entegrasyon gecikmesi, takip no kontrolü, destek.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kargo-politikasi.html">
+              <h3>Cringestore: Kargo politikası</h3>
+              <p>Teslimat, gecikme ve teslimat kanıtı (özet).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/iade-baslatma.html">
+              <h3>Cringestore: İade başlatma</h3>
+              <p>İade penceresi, kanıt ekleme, süreç.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/cayma-hakki.html">
+              <h3>Cringestore: Cayma hakkı</h3>
+              <p>Genel bilgilendirme: talep oluşturma ve istisnalar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/iade-kargosu.html">
+              <h3>Cringestore: İade kargosu</h3>
+              <p>Geri gönderim, paketleme, takip ve teslim kanıtı.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/bedel-iadesi-sureleri.html">
+              <h3>Cringestore: Bedel iadesi süreleri</h3>
+              <p>Bankaya yansıma, provizyon ve gecikmeler.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kargo-ucreti-iadesi.html">
+              <h3>Cringestore: Kargo ücreti iadesi</h3>
+              <p>Koşullar değişebilir: takip ve destek adımları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kanit-toplama.html">
+              <h3>Cringestore: Kanıt toplama</h3>
+              <p>Foto/video, etiket ve yazışma: hızlı sonuç için rehber.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/satici-ile-iletisim.html">
+              <h3>Cringestore: Satıcı ile iletişim</h3>
+              <p>En hızlı çözüm için mesaj şablonu ve kanıt.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/uyusmazlik.html">
+              <h3>Cringestore: Uyuşmazlık</h3>
+              <p>Aracı platform inceleme kriterleri ve karar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/resmi-basvuru-yollari.html">
+              <h3>Cringestore: Resmî başvuru yolları</h3>
+              <p>Çözülmezse genel yönlendirme (hukuki tavsiye değil).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/yasakli-urunler.html">
+              <h3>Cringestore: Yasaklı ürünler</h3>
+              <p>Yayınlanmaması gereken kategoriler ve yaptırımlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/urun-yorumlari-kurallari.html">
+              <h3>Cringestore: Ürün yorumları kuralları</h3>
+              <p>Yorumların kuralları ve yayınlanmama nedenleri.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/sahte-urun-suphesi-raporlama.html">
+              <h3>Cringestore: Şüpheli ürün bildirimi</h3>
+              <p>Sahte/kaçak ürün şüphesinde bildirim ve kanıt.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/satici-dogrulama.html">
+              <h3>Cringestore: Satıcı doğrulama</h3>
+              <p>Belge yükleme, onay süreci ve sık hatalar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/magaza-performansi.html">
+              <h3>Cringestore: Mağaza performansı</h3>
+              <p>Satışlar, iptal oranı ve kalite metrikleri.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/promosyon-yonetimi.html">
+              <h3>Cringestore: Promosyon yönetimi</h3>
+              <p>Kupon, indirim ve kampanya kuralları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kategori-ve-varyantlar.html">
+              <h3>Cringestore: Kategori & varyantlar</h3>
+              <p>Doğru kategori, beden/renk kurgusu ve yaygın hatalar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/stok-ve-fiyat-guncelleme.html">
+              <h3>Cringestore: Stok & fiyat güncelleme</h3>
+              <p>İptali azaltmak için stok/fiyat yönetimi ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kupon-uygulanmiyor.html">
+              <h3>Cringestore: Kupon uygulanmıyor</h3>
+              <p>Minimum sepet, uygun ürün, tarih/limit kontrolü.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/3d-secure.html">
+              <h3>Cringestore: 3D Secure</h3>
+              <p>Doğrulama adımı, neden istenir ve hata çözümü.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/siparis-hazirlama-kargo-etiketi.html">
+              <h3>Cringestore: Sipariş hazırlama & etiket</h3>
+              <p>Paketleme, barkod/etiket ve takip numarası akışı.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/iade-talepleri-yonetimi.html">
+              <h3>Cringestore: Satıcı iade talepleri</h3>
+              <p>Onay/ret ve standart gerekçe örnekleri.</p>
+            </a>
+
+            <a class="card card--link" href="./platform-kurallari.html">
+              <h3>Bilgilendirme: Platform kuralları</h3>
+              <p>Alıcı/satıcı kuralları ve genel çerçeve (örnek).</p>
+            </a>
+            <a class="card card--link" href="./on-bilgilendirme-formu.html">
+              <h3>Bilgilendirme: Ön bilgilendirme</h3>
+              <p>Sipariş öncesi bilgilendirme başlıkları (örnek).</p>
+            </a>
+            <a class="card card--link" href="./mesafeli-satis-sozlesmesi.html">
+              <h3>Bilgilendirme: Mesafeli satış sözleşmesi</h3>
+              <p>Sözleşme çerçevesi ve başlıklar (örnek).</p>
+            </a>
+            <a class="card card--link" href="./iade-cayma-proseduru.html">
+              <h3>Bilgilendirme: İade/cayma prosedürü</h3>
+              <p>Özet akış ve ilgili rehberler (örnek).</p>
+            </a>
+            <a class="card card--link" href="./kvkk-basvuru.html">
+              <h3>Bilgilendirme: KVKK başvurusu</h3>
+              <p>İlgili kişi başvurusu için örnek akış.</p>
+            </a>
+            <a class="card card--link" href="./resmi-makam-talepleri.html">
+              <h3>Bilgilendirme: Resmî makam talepleri</h3>
+              <p>Mahkeme/savcılık talepleri için genel çerçeve (örnek).</p>
+            </a>
+            <a class="card card--link" href="./cerez-politikasi.html">
+              <h3>Bilgilendirme: Çerez politikası</h3>
+              <p>Çerez türleri ve tercih yönetimi (örnek).</p>
+            </a>
+            <a class="card card--link" href="./ticari-ileti-yonetimi.html">
+              <h3>Bilgilendirme: Ticari ileti yönetimi</h3>
+              <p>Pazarlama iletileri izin/ret yaklaşımı (örnek).</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/kampanyalar-ve-kuponlar.html">
+              <h3>Cringestore: Kampanyalar & kuponlar</h3>
+              <p>Uygunluk koşulları, birleşme ve iptal/iade etkisi.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/fiyat-ve-stok-degisimi.html">
+              <h3>Cringestore: Fiyat & stok değişimi</h3>
+              <p>Sepette/ödemede değişirse ne olur? Kontrol listesi.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/cuzdan-cringegold.html">
+              <h3>Cringestore: Cüzdan / CringeGold (varsa)</h3>
+              <p>Bakiye kullanımı ve iade senaryoları (genel).</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/siparis-durumu.html">
+              <h3>Cringestore: Sipariş durumu</h3>
+              <p>Hazırlanıyor, kargoda, teslim edildi durumları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/siparis-gecmisi-gorunmuyor.html">
+              <h3>Cringestore: Sipariş geçmişi görünmüyor</h3>
+              <p>Doğru hesap/güncelleme/yeniden giriş ve destek adımları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/adres-guncelleme.html">
+              <h3>Cringestore: Adres güncelleme</h3>
+              <p>Hazırlık aşamasında adres değişikliği kuralları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/odeme-sorunlari.html">
+              <h3>Cringestore: Ödeme sorunları</h3>
+              <p>Provizyon, çekim, başarısız ödeme ve çözümler.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/odeme-ekrani-hata.html">
+              <h3>Cringestore: Ödeme ekranı hata veriyor</h3>
+              <p>VPN/AdBlock, 3D Secure ve teknik kontroller.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/supheli-islem-bildirme.html">
+              <h3>Cringestore: Şüpheli işlem bildirme</h3>
+              <p>Hesap/ödeme güvenliği için hızlı adımlar ve bildirim.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/iptal-degisiklik.html">
+              <h3>Cringestore: İptal & değişiklik</h3>
+              <p>İptal, değişiklik ve kısmi iade senaryoları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/alici-korumasi.html">
+              <h3>Cringestore: Alıcı koruması</h3>
+              <p>Uyuşmazlık, kanıt ve inceleme akışı.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/standart-teslimat.html">
+              <h3>Cringestore: Standart teslimat</h3>
+              <p>Teslimat süresi, takip ve gecikme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/teslimat-gecikmesi.html">
+              <h3>Cringestore: Teslimat gecikmesi</h3>
+              <p>Tahmini süre geçtiyse kontrol listesi.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/hizli-teslimat.html">
+              <h3>Cringestore: Hızlı teslimat</h3>
+              <p>Uygunluk, teslim süresi ve ipuçları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/teslimat-kaniti.html">
+              <h3>Cringestore: Teslimat kanıtı</h3>
+              <p>İmza, fotoğraf, teslim teyidi ve inceleme.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/teslim-alindi-onayi.html">
+              <h3>Cringestore: Teslim alındı onayı</h3>
+              <p>Onay ne anlama gelir, ne zaman verilmeli?</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/hasarli-paket.html">
+              <h3>Cringestore: Hasarlı paket</h3>
+              <p>Teslim anında yapılacaklar ve talep adımları.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kargo-teslim-edildi-gelmedi.html">
+              <h3>Cringestore: Teslim edildi ama gelmedi</h3>
+              <p>Komşu/kapı görevlisi kontrolü, kargo firması ve destek.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kargo-firmalari.html">
+              <h3>Cringestore: Kargo firmaları</h3>
+              <p>Entegre firmalar, SLA ve takip.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/uluslararasi-gonderim.html">
+              <h3>Cringestore: Uluslararası gönderim</h3>
+              <p>Gümrük, teslimat süreleri ve iade.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/hasarli-urun.html">
+              <h3>Cringestore: Hasarlı ürün</h3>
+              <p>Kanıt, değerlendirme ve çözüm seçenekleri.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/yanlis-urun.html">
+              <h3>Cringestore: Yanlış ürün</h3>
+              <p>Değişim veya iade için adımlar ve kanıt.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/eksik-urun.html">
+              <h3>Cringestore: Eksik ürün</h3>
+              <p>Hızlı kontrol, kanıt ve talep/uyuşmazlık akışı.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/kismi-iade.html">
+              <h3>Cringestore: Kısmi iade</h3>
+              <p>Çok ürünlü siparişlerde parça parça iade.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/iade-suresi.html">
+              <h3>Cringestore: İade süresi</h3>
+              <p>İade penceresi ve istisnalar.</p>
+            </a>
+
+            <a class="card card--link" href="./articles/cringestore/satici-sorumluluklari.html">
+              <h3>Cringestore: Satıcı sorumlulukları</h3>
+              <p>Stok, kargolama, ürün doğruluğu ve iletişim.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/ihlal-yaptirimlar.html">
+              <h3>Cringestore: İhlal & yaptırımlar</h3>
+              <p>İlan kaldırma, askıya alma ve kısıtlar.</p>
+            </a>
+            <a class="card card--link" href="./articles/cringestore/destek-kanallari.html">
+              <h3>Cringestore: Destek kanalları</h3>
+              <p>Talep açma, canlı sohbet, WhatsApp ve e‑posta.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        © 2026 Cringe Co. Tüm hakları saklıdır.
+        <div class="footer__links">
+          <a href="./index.html">Ana sayfa</a>
+          <a href="./cringebank/index.html">Cringebank</a>
+          <a href="./cringestore/index.html">Cringestore</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/site-search.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Secure · Cringestore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="logo" href="../../index.html"><span class="logo__dot"></span>Cringe Help Center</a>
+        <nav class="nav">
+          <a href="../../cringestore/index.html#odeme">Cringestore</a>
+          <a href="./index.html">Makaleler</a>
+          <a href="../../search.html">Arama</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="../../index.html">Ana sayfa</a><span class="sep">/</span>
+          <a href="../../cringestore/index.html#odeme">Cringestore</a><span class="sep">/</span>
+          <a href="./index.html">Makaleler</a><span class="sep">/</span>
+          <span>3D Secure</span>
+        </div>
+
+        <section class="section" style="padding-top: 18px;">
+          <div class="article-layout">
+            <article class="prose">
+              <span class="kicker">Cringestore · Ödeme</span>
+              <h1>3D Secure nedir ve neden istenir?</h1>
+              <div class="meta">
+                <span class="tag">Konu: Ödeme</span>
+                <span class="tag">Süre: 2-5 dk</span>
+                <span class="tag">Güncellendi: 03.02.2026</span>
+              </div>
+
+              <p>
+                3D Secure; kartla ödeme sırasında bankanın ek bir doğrulama adımı istemesidir.
+                Amaç, kart sahibinin gerçekten sen olduğunu doğrulamak ve sahte işlemleri azaltmaktır.
+              </p>
+
+              <h2 id="ne">1) 3D Secure nasıl görünür?</h2>
+              <ul>
+                <li>Bankanın doğrulama ekranına yönlendirilirsin.</li>
+                <li>SMS, mobil uygulama bildirimi veya banka onayı istenebilir.</li>
+              </ul>
+
+              <h2 id="neden">2) Neden bazen istenir bazen istenmez?</h2>
+              <ul>
+                <li>Banka politikası ve kart türü</li>
+                <li>İşlem tutarı ve satıcı/ödeme sağlayıcı kurgusu</li>
+                <li>Güvenlik kontrolleri (detaylar public olarak paylaşılmaz)</li>
+              </ul>
+
+              <h2 id="hata">3) 3D doğrulama ekranında hata alıyorum</h2>
+              <ol>
+                <li>Sayfayı yenile ve 1-2 dakika sonra tekrar dene.</li>
+                <li>VPN/AdBlock kapatmayı dene: <a href="./odeme-ekrani-hata.html">Ödeme ekranı hata veriyor</a>.</li>
+                <li>SMS gelmiyorsa bankanın uygulamasını/hat ayarlarını kontrol et.</li>
+                <li>Devam ederse farklı kartla dene veya bankanla görüş.</li>
+              </ol>
+
+              <div class="hero__actions">
+                <a class="btn btn--solid" href="./odeme-basarisiz.html">Ödeme başarısız</a>
+                <a class="btn btn--outline" href="./odeme-yontemleri.html">Ödeme yöntemleri</a>
+              </div>
+
+              <div class="note">
+                <strong>Resmî kaynaklar (TR):</strong>
+                <ul>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6493&MevzuatTur=1&MevzuatTertip=5">6493 sayılı Ödeme ve Menkul Kıymet Mutabakat Sistemleri, Ödeme Hizmetleri ve Elektronik Para Kuruluşları Hakkında Kanun</a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.tcmb.gov.tr/">Türkiye Cumhuriyet Merkez Bankası (TCMB) — resmî site</a>
+                  </li>
+                </ul>
+                <p class="muted">Not: 3D Secure akışı bankana ve ödeme sağlayıcısına göre değişebilir; bağlayıcı bilgi için resmî metinler ve banka bildirimleri esas alınır.</p>
+              </div>
+            </article>
+
+            <aside class="toc">
+              <div class="hero__card">
+                <h3>Bu sayfada</h3>
+                <ul class="list">
+                  <li><a href="#ne">Görünüm <span>1</span></a></li>
+                  <li><a href="#neden">Neden <span>2</span></a></li>
+                  <li><a href="#hata">Hata <span>3</span></a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer"><div class="container">© 2026 Cringestore.</div></footer>
+  </body>
+</html>
