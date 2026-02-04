@@ -249,14 +249,7 @@ mark.hl {
   font-weight: 800;
   color: #ffffff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-}
-
-/* Add breathing room between stacked orange blocks */
-.note + .note,
-.note + .callout--brand,
-.callout--brand + .note,
-.callout--brand + .callout--brand {
-  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
 .meta {
@@ -453,7 +446,7 @@ mark.hl {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 14px;
+  margin: 14px 0 12px;
 }
 
 .grid {
@@ -560,6 +553,7 @@ mark.hl {
   padding: 14px 16px;
   background: #ffffff;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  margin-bottom: 12px;
 }
 
 .callout--brand {
@@ -567,6 +561,7 @@ mark.hl {
   color: #ffffff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-color: transparent;
+  margin-bottom: 12px;
 }
 
 .table {
