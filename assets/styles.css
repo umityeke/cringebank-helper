@@ -251,6 +251,14 @@ mark.hl {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
 }
 
+/* Add breathing room between stacked orange blocks */
+.note + .note,
+.note + .callout--brand,
+.callout--brand + .note,
+.callout--brand + .callout--brand {
+  margin-top: 10px;
+}
+
 .meta {
   display: flex;
   flex-wrap: wrap;
