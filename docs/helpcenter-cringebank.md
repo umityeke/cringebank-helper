@@ -89,8 +89,8 @@ Aşağıdaki başlıklar **site menüsü/kategori** + **makale listesi** olarak 
 - Yorumlar neden görünmüyor (filtre, rapor, kural)
 - Spam davranışlar ve kısıtlamalar (genel)
 
-### 4.7 Mesajlar (CringChat)
-- Mesaj istekleri ve güvenlik
+### 4.7 CringChat
+- CringChat istekleri ve güvenlik
 - Engelleme/kısıtlama CringChat’e etkisi
 - Taciz/tehdit/şantaj: raporlama, güvenlik önerileri
 

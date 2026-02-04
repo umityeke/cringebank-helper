@@ -59,6 +59,10 @@ const pathReplacements = [
     fromRel: 'articles/cringebank/ozel-mesaj-taciz-tehdit-santaj.html',
     toRel: 'articles/cringebank/cringchat-taciz-tehdit-santaj.html',
   },
+  {
+    fromRel: 'articles/cringebank/mesaj-istekleri.html',
+    toRel: 'articles/cringebank/cringchat-istekleri.html',
+  },
 ];
 
 function applyTerminology(content) {
@@ -130,6 +134,22 @@ function applyTerminology(content) {
   next = applyReplacements(next, [
     { from: /q=dm\b/g, to: 'q=mesaj' },
     { from: /"dm"/g, to: '"mesaj"' },
+  ]);
+
+  // CringChat-focused UI wording (avoid “Mesaj istekleri” as a feature name)
+  next = applyReplacements(next, [
+    { from: /Mesaj istekleri/g, to: 'CringChat istekleri' },
+    { from: /mesaj istekleri/g, to: 'CringChat istekleri' },
+    { from: /id="mesaj"/g, to: 'id="cringchat"' },
+    { from: /href="#mesaj"/g, to: 'href="#cringchat"' },
+    { from: />Mesaj\s*<span>/g, to: '>CringChat <span>' },
+    { from: /\bMesajlar \(CringChat\)\b/g, to: 'CringChat' },
+    { from: /\bMesaj \(CringChat\)\b/g, to: 'CringChat' },
+    { from: /<strong>Mesaj:<\/strong>/g, to: '<strong>CringChat:</strong>' },
+
+    // Search CTA used for this feature
+    { from: /q=mesaj\b/g, to: 'q=cringchat' },
+    { from: /"mesaj"/g, to: '"cringchat"' },
   ]);
 
   // Idiomatic phrasing cleanup (after hikaye->geçici paylaşım swap)

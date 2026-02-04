@@ -41,7 +41,7 @@ tek bir yerde tanımlar.
 - Kullanıcı üretimi içerik (post/video/foto)
 - Takip / akış / keşfet
 - Etkileşim (beğeni, yorum, paylaşım, kaydetme)
-- CringChat (mesajlaşma)
+- CringChat
 - Bildirimler
 - Profil, gizlilik, güvenlik ayarları
 - (Opsiyonel/ileri) rozetler, yarışmalar, görevler, CG ekonomisi (CringeGold)
@@ -129,7 +129,7 @@ Paylaşım sonrası:
 
 #### 5.1.6 CringChat
 - Inbox listesi
-- Mesaj istekleri / filtreleme
+- CringChat istekleri / filtreleme
 - Medya paylaşımı
 - Abuse/spam tespiti (genel) + rate limit
 
